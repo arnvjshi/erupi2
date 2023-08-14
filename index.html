@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-RUPI Transaction</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .form-control {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .btn {
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>e-RUPI Transaction</h1>
+    </div>
+    <form action="/" method="POST">
+        <div class="form-group">
+            <label for="beneficiaryMobileNumber">Beneficiary Mobile Number</label>
+            <input type="text" class="form-control" id="beneficiaryMobileNumber" name="beneficiaryMobileNumber">
+        </div>
+        <div class="form-group">
+            <label for="voucherAmount">Voucher Amount</label>
+            <input type="number" class="form-control" id="voucherAmount" name="voucherAmount">
+        </div>
+        <div class="form-group">
+            <label for="voucherPurpose">Voucher Purpose</label>
+            <input type="text" class="form-control" id="voucherPurpose" name="voucherPurpose">
+        </div>
+        <button type="submit" class="btn">Generate Voucher</button>
+    </form>
+</div>
+</body>
+</html>
